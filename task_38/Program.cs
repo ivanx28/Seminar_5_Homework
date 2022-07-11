@@ -6,7 +6,7 @@ double [] fillArray(int n)              // Метод заполнения ма�
     double[] arr = new double [n];
     for (int i = 0; i < arr.Length; i++)
     {
-        arr[i] = new Random().Next(-100, 100);
+        arr[i] = Convert.ToDouble(new Random().Next(-100, 100)/10.0);
     }
     return arr;
 }
@@ -41,4 +41,4 @@ Console.WriteLine("Наименьший элемент массива: " + findM
 
 double distinction = findMax(array) - findMin(array);
 
-Console.WriteLine("Разница между наибольшим и наименьшим элементом массива: " + distinction);
+Console.WriteLine("Разница между наибольшим и наименьшим элементом массива: " + distinction); 
